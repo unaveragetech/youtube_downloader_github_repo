@@ -255,6 +255,10 @@
 
 
 ### update 3.0 version ###
+#auto install req
+from pipin import install_requirements
+install_requirements()
+
 import streamlit as st
 from pytubefix import YouTube
 import re
@@ -262,6 +266,8 @@ import requests
 import os
 from datetime import datetime
 from pytube.cli import on_progress
+
+
 
 # Streamlit UI
 st.title("YouTube Video Downloader")

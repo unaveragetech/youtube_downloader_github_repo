@@ -269,12 +269,17 @@
 
 
 ## new update code for only longer video ## 
+#auto install req
+from pipin import install_requirements
+install_requirements()
 
 from pytubefix import YouTube
 import os
 import requests
 import re
 from datetime import datetime
+
+
 
 # Function to download video by resolution
 def download_video(video_url, resolution, output_path, title):
